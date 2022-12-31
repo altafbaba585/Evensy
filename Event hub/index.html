@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/27dd3a0a58.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color:rgb(222, 204, 216);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    border-bottom: 2px solid gray;
+    height: 100px;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    margin-left: 8px;
+    cursor: pointer
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 30px;
+    margin-right: 8px;
+}
+
+.rightIcon{
+    margin-right: 9px;
+}
+
+.requirement,
+.solutionBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+    margin-top: 50px;
+}
+.solutionBox{
+    width: 700px;
+}
+
+
+
+.bodyImage{
+    width: 100%;
+}
+
+.question,
+.solution{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.solution{
+    color: rgb(139, 25, 139);
+}
+.title,
+.solutionTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;   
+}
+
+.solutionTitle{
+    font-size:17px;
+}
+
+.report{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.reportTitle{
+    color: green
+}
+
+.reportBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box{
+    border: 2px solid rgb(172, 128, 128);
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.footerPara{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgb(172, 128, 128);
+    margin-top: 30px;
+    background-color: rgb(158, 212, 221);
+    font-size: 18px;
+    font-weight: bold;
+    width: 100vw;
+}
+
+
+.form{
+    display: flex;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center
+}
+
+.btn{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+    cursor: pointer
+}
+
+.homeBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 640px) {
+    .solutionBox,
+    .requirement{
+      width: 400px;
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+            <h1 class="brand">Evensy</h1>
+            <div class="right">
+                <p class="rightDetails">Contact</p>
+                <p class="rightDetails"><i class="fa-solid fa-phone rightIcon"></i>8801650749</p>
+                <p class="rightDetails"><i class="fa-solid fa-envelopes-bulk rightIcon"></i>evensy3@gmail.com</p>
+            </div>
+        </div>
+        <div class="homeBody">
+            <div class="requirement">
+                <img src="https://cdn.pixabay.com/photo/2022/02/02/10/56/questions-6988157_960_720.png" class="bodyImage">
+                <h2 class="question">Are you looking for a Customer ?</h2>
+                <h4 class="title">To scale your bussiness you need to have more contacts and more marketing</h4>
+            </div>
+            <div class="report">
+                <h1 class="reportTitle">Report:</h1>
+                <div class="reportBox">
+                    <div class="box">
+                        <h3 class="boxPrice">$1,135.4</h3>
+                        <p class="boxPara">Billion is the valuation of event industry in the year 2019</p>
+                    </div>
+                    <div class="box">
+                        <h3 class="boxPrice">$1,552.9</h3>
+                        <p class="boxPara">Billion is expected valuation by the year 2028</p>
+                    </div>
+                </div>
+            </div>
+            <div class="solutionBox">
+                <img src="https://media.istockphoto.com/id/1252494221/photo/thinking-child-boy-on-black-background-with-light-bulb-and-question-marks-brainstorming-and.jpg?s=612x612&w=0&k=20&c=jLTFW225OA4TlnzjhZCFLA43_s38PZIUO1cz5pC0hYs=" class="bodyImage">
+                <h2 class="solution">We provide you the solution. . .</h2>
+                <h4 class="solutionTitle">We evensy are coming up with a platform where you can get your customers and bookings in your mobile.</h4>
+            </div>
+            <p class="footerPara">Say yes to scale your bussiness</p>
+            <div class="form">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdmTfLyRvPUUyNXTsO49CslywEZAXruDc7bFArYk6PaCrTsYA/viewform?usp=sf_link" class="btn">Click Here to fill form</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
